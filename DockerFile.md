@@ -109,7 +109,7 @@ ref: ```https://docs.docker.com/install/linux/docker-ce/ubuntu/```
     * Run 
 
         ```shell
-        $ sudo docker run -itd -p {your_port}:22 {your_image}
+        $ sudo docker run --name {your_container_name} -itd -p {your_port}:22 {your_image}
         ```
         
         For example:
