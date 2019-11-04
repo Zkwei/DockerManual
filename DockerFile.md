@@ -180,6 +180,7 @@ ref: ```https://docs.docker.com/install/linux/docker-ce/ubuntu/```
     ```shell
     $ passwd root
     ```
+
 ### Now you can use ssh connect to docker ###
 
 ```shell
@@ -191,3 +192,11 @@ ref: ```https://docs.docker.com/install/linux/docker-ce/ubuntu/```
     ```shell
     $ ssh root@192.168.83.2 -p 1234
     ```
+
+### Create image from your Container ###
+
+ref: ```https://docs.docker.com/engine/reference/commandline/commit/```
+
+```shell
+    $ sudo docker commit {CONTAINER_ID} {your_image_name}:{TAG_or_version}
+```
