@@ -200,3 +200,37 @@ ref: ```https://docs.docker.com/engine/reference/commandline/commit/```
 ```shell
     $ sudo docker commit {CONTAINER_ID} {your_image_name}:{TAG_or_version}
 ```
+
+
+### Copy Container ###
+
+ref1: ```https://docs.docker.com/engine/reference/commandline/export/``` 
+
+ref2: ```https://docs.docker.com/engine/reference/commandline/import/```
+
+
+```shell
+    $ sudo docker export {your_container_id} > {your_target_name}
+```
+
+example: 
+
+```shell
+    $sudo docker export red_panda > latest.tar
+```
+
+
+#### Now you can use cp or scp to COPY the dockfile to anywhere ####
+
+
+```shell
+    $ sudo docker import {your_target_name}
+```
+
+example:
+
+```shell
+    $ sudo docker import /path/to/latest.tar
+```
+
+#### Use tag to name the new image ####
