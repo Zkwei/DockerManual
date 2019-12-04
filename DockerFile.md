@@ -220,7 +220,7 @@ example:
 ```
 
 
-#### Now you can use cp or scp to COPY the dockfile to anywhere ####
+#### Now you can use ```cp``` or ```scp``` to COPY the dockfile to anywhere ####
 
 
 ```shell
